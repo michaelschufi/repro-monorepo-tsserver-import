@@ -2,14 +2,20 @@
   "name": "@repo/ui",
   "version": "0.0.0",
   "private": true,
+  "main": "./dist/index.js",
   "exports": {
     "./button": "./src/button.tsx",
     "./card": "./src/card.tsx",
-    "./code": "./src/code.tsx"
+    "./code": "./src/code.tsx",
+    "./get-foo": "./src/get-foo.ts",
+    "./get-foobar": "./src/get-foo-bar.ts"
   },
   "scripts": {
     "lint": "eslint . --max-warnings 0",
     "generate:component": "turbo gen react-component"
+  },
+  "dependencies": {
+    "typescript": "*"
   },
   "devDependencies": {
     "@repo/eslint-config": "workspace:*",
